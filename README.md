@@ -1,4 +1,3 @@
-# Prediction_For_stack_overflow_Questions
 Download dataset from https://www.dropbox.com/s/5721wcs2guuykzl/stacksample.zip?dl=0
 
 # Goal : Given text for Questions , predict tags associated with them 
@@ -17,13 +16,14 @@ Suggested Guidelines :
 
 1. Data cleaning using regex
 
-2. Plot the top 10 tags 
+2. Using MultiLabelBinarizer calculate the top 10 tags
 
 3. Split the data set shared into trainig and validation data.
 
 4. Update question and respective tags in question_clean file
 
-5. Using RNN build the model and predict the f1_score: 0.83 with a 0.89 Validation accuracy
+5. Build the RNN model to predict the f1_score of test data. Using the Adam optimazer compile the model for 5 epoch. After compiling the model predict the f1_score: 0.83 with a 0.89 Validation accuracy
+
 
 
 
